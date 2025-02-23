@@ -1,0 +1,43 @@
+{
+	"name": "covergo",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"lint": "biome check --write --no-errors-on-unmatched --files-ignore-unknown=true .",
+		"preview": "vite preview",
+		"test": "cross-env CI=true vitest --passWithNoTests",
+		"prepare": "lefthook install"
+	},
+	"dependencies": {
+		"react": "19.0.0",
+		"react-dom": "19.0.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@tailwindcss/typography": "0.5.16",
+		"@testing-library/dom": "10.4.0",
+		"@testing-library/jest-dom": "6.6.3",
+		"@testing-library/react": "16.2.0",
+		"@testing-library/user-event": "14.6.1",
+		"@types/react": "19.0.10",
+		"@types/react-dom": "19.0.4",
+		"@vitejs/plugin-react-swc": "3.8.0",
+		"autoprefixer": "10.4.20",
+		"cross-env": "7.0.3",
+		"daisyui": "4.12.23",
+		"jsdom": "26.0.0",
+		"lefthook": "1.10.11",
+		"postcss": "8.5.3",
+		"tailwindcss": "3.4.17",
+		"ts-node": "10.9.2",
+		"typescript": "5.7.3",
+		"vite": "6.1.1",
+		"vitest": "3.0.6"
+	},
+	"engines": {
+		"node": "22.14.0"
+	}
+}
