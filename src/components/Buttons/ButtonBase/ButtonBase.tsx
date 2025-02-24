@@ -8,6 +8,7 @@ const ButtonBase: FC<ButtonBaseProps> = (props) => {
 	return (
 		<button
 			className={`bg-white hover:bg-slate-50 border px-10 py-2 ${className}`}
+			type="button"
 			{...rest}
 		/>
 	);
