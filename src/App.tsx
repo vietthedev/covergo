@@ -1,5 +1,6 @@
 import {
 	type ChangeEvent,
+	type FormEventHandler,
 	type MouseEventHandler,
 	useRef,
 	useState,
@@ -73,7 +74,10 @@ const App = () => {
 		}));
 	};
 
-	const handleSubmit = (formData: FormData) => {
+	const handleSubmit: FormEventHandler<HTMLFormElement> = (event) => {
+		event.preventDefault();
+
+		const formData = new FormData(event.currentTarget);
 		const values: InsuranceFieldValues = {
 			age: Number.parseInt(formData.get("age")?.toString() ?? "0"),
 			country: formData.get("country")?.toString() ?? "",
@@ -243,7 +247,7 @@ const App = () => {
 	];
 
 	return (
-		<form action={handleSubmit} ref={formRef}>
+		<form onSubmit={handleSubmit} ref={formRef}>
 			<Wizard activePage={activePage} pages={pages} />
 		</form>
 	);
