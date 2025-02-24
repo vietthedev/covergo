@@ -1,7 +1,11 @@
 import { AGE_LIMIT, CURRENCY_RATE, PACKAGE_RATE } from "@/common/constants";
-import type { InsuranceFieldValues, InsurancePackage } from "@/common/types";
+import type {
+	CountryCurrency,
+	InsuranceFieldValues,
+	InsurancePackage,
+} from "@/common/types";
 
-export const calculatePremium = (age: number, currency: string) => {
+export const calculatePremium = (age: number, currency: CountryCurrency) => {
 	const currencyRate = CURRENCY_RATE[currency];
 
 	return 10 * age * currencyRate;

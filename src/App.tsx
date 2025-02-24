@@ -12,6 +12,7 @@ import {
 	validateFormValues,
 } from "@/common/helpers";
 import type {
+	Currency,
 	InsuranceFieldValues,
 	InsurancePackage,
 	Package,
@@ -46,8 +47,9 @@ const App = () => {
 		package: "standard",
 	});
 	const currency =
-		currencies.find(({ code }) => code === COUNTRY_CURRENCY[formData.country])
-			?.code ?? "HKD";
+		(currencies as Currency[]).find(
+			({ code }) => code === COUNTRY_CURRENCY[formData.country],
+		)?.code ?? "HKD";
 	const premium = calculatePackage(
 		calculatePremium(formData.age, COUNTRY_CURRENCY[formData.country]),
 		formData.package,
