@@ -1,0 +1,17 @@
+[
+	{
+		"id": 1,
+		"countryCode": "HKG",
+		"code": "HKD"
+	},
+	{
+		"id": 2,
+		"countryCode": "USA",
+		"code": "USD"
+	},
+	{
+		"id": 3,
+		"countryCode": "AUS",
+		"code": "AUD"
+	}
+]

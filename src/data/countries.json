@@ -1,0 +1,17 @@
+[
+	{
+		"id": 1,
+		"name": "Hong Kong",
+		"code": "HKG"
+	},
+	{
+		"id": 2,
+		"name": "USA",
+		"code": "USA"
+	},
+	{
+		"id": 3,
+		"name": "Australia",
+		"code": "AUS"
+	}
+]

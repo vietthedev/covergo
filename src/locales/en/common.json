@@ -1,0 +1,36 @@
+{
+	"button": {
+		"back": "Back",
+		"buy": "Buy",
+		"next": "Next",
+		"ok": "Ok",
+		"start": "Start"
+	},
+	"label": {
+		"age": "Age",
+		"name": "Name",
+		"package": "Package",
+		"premium": "Premium",
+		"whereDoYouLive": "Where do you live",
+		"yourPremiumIs": "Your premium is:"
+	},
+	"message": {
+		"letsBuySomeInsurance": "Let's buy some insurance. It is going to take only a few steps.",
+		"yourAgeIsOverOurAcceptedLimit": "Your age is over our accepted limit. We are sorry but we cannot insure you now."
+	},
+	"insurancePackage": {
+		"safe": "Safe",
+		"standard": "Standard",
+		"superSafe": "Super Safe"
+	},
+	"placeholder": {
+		"addNumber": "Add number",
+		"addText": "Add text"
+	},
+	"title": {
+		"helloThere": "Hello There!",
+		"ooops": "Ooops",
+		"summary": "Summary",
+		"tellUsAboutYourself": "Tell us about yourself"
+	}
+}

@@ -1,0 +1,17 @@
+[
+	{
+		"id": 1,
+		"code": "standard",
+		"rate": 1
+	},
+	{
+		"id": 2,
+		"code": "safe",
+		"rate": 1.5
+	},
+	{
+		"id": 3,
+		"code": "superSafe",
+		"rate": 1.75
+	}
+]

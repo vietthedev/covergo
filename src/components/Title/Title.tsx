@@ -5,7 +5,7 @@ interface TitleProps extends HTMLAttributes<HTMLHeadingElement> {}
 const Title: FC<TitleProps> = (props) => {
 	const { className = "", ...rest } = props;
 
-	return <h2 className={`font-bold mb-6 text-xl ${className}`} {...rest} />;
+	return <h2 className={`font-bold mb-2 text-4xl ${className}`} {...rest} />;
 };
 
 export default Title;

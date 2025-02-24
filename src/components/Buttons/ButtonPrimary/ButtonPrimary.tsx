@@ -8,7 +8,7 @@ const ButtonPrimary: FC<ButtonPrimaryProps> = (props) => {
 
 	return (
 		<ButtonBase
-			className={`bg-black hover:bg-white text-white hover:text-black ${className}`}
+			className={`[&]:bg-black hover:bg-white text-white hover:text-black ${className}`}
 			{...rest}
 		/>
 	);
